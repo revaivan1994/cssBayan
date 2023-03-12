@@ -72,6 +72,44 @@ input:checked ~ label .bayan-title{
 
 }
 
+@media (min-width: 320px) {
+    body {
+        font-size: 0.8em;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+    .wrapper{
+        max-width: 80%;
+    }
+}
+
+@media (min-width: 820px) {
+    body {
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2.25rem;
+    }
+    .wrapper{
+        max-width: 40%;
+    }
+}
+
+@media (min-width: 1920px) {
+    body {
+        font-size: 1.7rem;
+    }
+
+    h1 {
+        font-size: 2.75rem;
+    }
+    .wrapper{
+        max-width: 40%;
+    }
+}
 
 
 
