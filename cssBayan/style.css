@@ -1,5 +1,79 @@
 *{
-    padding: 0;
-    margin: 0;
     box-sizing: border-box;
 }
+body{
+    background: #B0E0E6;
+}
+.wrapper{
+    max-width: 40%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+input{
+    display: none;
+}
+.bayan-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all .5s ease;
+    height: 1.5rem;
+    cursor: pointer;
+    border-top: 0.1rem solid black;
+    font-weight: 700;
+
+}
+label{
+    display: block;
+    cursor: pointer;
+}
+.plus{
+    opacity: 1;
+    transition: all .5s ease;
+}
+.bayan-img{
+    display: block;
+    margin: 0 auto;
+    max-width: 70%;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0.2rem 0;
+    transition: all .5s ease-out;
+}
+.plus{
+    opacity: 0;
+}
+.wrapper:hover .plus{
+    opacity: 1;
+    color: green;
+}
+.wrapper:hover{
+    color: green;
+}
+label:hover .bayan-img{
+    max-height: 100vh;
+}
+label:hover .plus{
+    transform: rotate(90deg);
+}
+
+
+
+input:checked ~ label .bayan-img{
+    max-height: 100vh;
+}
+input:checked ~ label .bayan-title .btn{
+    transform: rotate(90deg);
+}
+input:checked ~ label .bayan-title{
+    color: green;
+
+}
+
+
+
+
+
+  
