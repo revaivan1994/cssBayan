@@ -72,6 +72,17 @@ input:checked ~ label .bayan-title{
 
 }
 
+@media (hover:hover) {
+    .item:active label,
+    .item:active .content>.bayan-img {
+        cursor: progress;
+        transition: 1s;
+        color: rgb(255, 0, 225);
+        opacity: .4;
+}
+}
+
+
 @media (min-width: 320px) {
     body {
         font-size: 0.8em;
